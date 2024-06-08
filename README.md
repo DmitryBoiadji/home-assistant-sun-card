@@ -1,4 +1,8 @@
-# *Notice about the future of this repository*
+# *Notice about this repository*
+
+This is a fork of a fork from [Edwardtfn's attempt to save original one from AitorDB](https://github.com/edwardtfn/home-assistant-sun-card). I just added a Daylight feature at the top of the card and change some screenshots below.
+
+Edwardtfn's description will follow: 
 
 *As you may know, this repo was duplicated from AitorDB/home-assistant-sun-card which was archived on 2023-03-10, and just like this one, multiple other forks have been created in a rush to preserve this nice card in Home Assistant. And since then our fork have received some pull requests from users who wanted to contribute to this card.*
 
@@ -18,8 +22,8 @@
 Home Assistant Sun card based on Google Weather design
 
 ## Preview
-![Light mode preview](https://user-images.githubusercontent.com/6829526/118412152-54d93900-b690-11eb-8b2b-e87b4cbcca7f.png)
-![Dark mode preview](https://user-images.githubusercontent.com/6829526/118412162-64f11880-b690-11eb-9bd7-b8c6c7d8efd8.png)
+![Light mode preview](https://github.com/DmitryBoiadji/home-assistant-sun-card/blob/main/src/assets/screenshots/light.png?raw=true)
+![Dark mode preview](https://github.com/DmitryBoiadji/home-assistant-sun-card/blob/main/src/assets/screenshots/dark.png?raw=true)
 
 ## Requirements
 - This card uses [Sun integration](https://www.home-assistant.io/integrations/sun/) so it needs to be enabled

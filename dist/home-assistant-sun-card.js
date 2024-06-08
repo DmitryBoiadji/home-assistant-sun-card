@@ -3757,8 +3757,6 @@ _defineProperty(Constants, "LOCALIZATION_LANGUAGES", {
 
 _defineProperty(Constants, "SUN_RADIUS", 17);
 
-var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17;
-
 var DaylightCalculator = /*#__PURE__*/function () {
   function DaylightCalculator() {
     _classCallCheck(this, DaylightCalculator);
@@ -3796,14 +3794,16 @@ var DaylightCalculator = /*#__PURE__*/function () {
       var daylightMilliseconds = sunsetDate.getTime() - sunriseDate.getTime();
       var daylightMinutes = daylightMilliseconds / 60000;
       var daylightHours = Math.floor(daylightMinutes / 60);
-      var remainingMinutes = Math.round(daylightMinutes % 60);
-      return "".concat(daylightHours, ":").concat(remainingMinutes);
+      var remainingMinutes = Math.round(daylightMinutes % 60); //TODO translate h and m.
+
+      return "".concat(daylightHours, " h ").concat(remainingMinutes, " m");
     }
   }]);
 
   return DaylightCalculator;
 }();
 
+var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17;
 var SunCardContent = /*#__PURE__*/function () {
   function SunCardContent() {
     _classCallCheck(this, SunCardContent);

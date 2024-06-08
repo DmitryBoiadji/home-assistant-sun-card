@@ -1,6 +1,8 @@
 # *Notice about this repository*
 
-This is a fork of a fork from [Edwardtfn's attempt to save original one from AitorDB](https://github.com/edwardtfn/home-assistant-sun-card). I just added a Daylight feature at the top of the card and change some screenshots below.
+This is a fork of a fork from [Edwardtfn's attempt to save original one from AitorDB](https://github.com/edwardtfn/home-assistant-sun-card).  
+I just added a Daylight feature at the top of the card and changed some screenshots below.
+
 
 Edwardtfn's description will follow: 
 

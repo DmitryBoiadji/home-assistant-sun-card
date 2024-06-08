@@ -109,3 +109,6 @@ build.cmd
 
 # Jetbains IDEA
 .idea
+
+#MacOS meta
+.DS_Store

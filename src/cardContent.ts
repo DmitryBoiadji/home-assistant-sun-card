@@ -1,8 +1,43 @@
 import { html, TemplateResult } from 'lit-element'
 import { TSunCardConfig, TSunCardData, TSunCardTexts, TSunCardTime } from './types'
 
+
+
+class DaylightCalculator {
+    public static parseTime (period: string, time: string): { hours: number, minutes: number } {
+        // eslint-disable-next-line prefer-const
+        let [hours, minutes] = time.split(':').map(Number)
+        if (period === 'PM' && hours !== 12) {
+            hours += 12
+        } else if (period === 'AM' && hours === 12) {
+            hours = 0
+        }
+        return { hours, minutes }
+    }
+
+    public static calculateDaylightTime (sunrise: { period: string, time: string }, sunset: { period: string, time: string }): string {
+        const sunriseTime = this.parseTime(sunrise.period, sunrise.time)
+        const sunsetTime = this.parseTime(sunset.period, sunset.time)
+
+        const sunriseDate = new Date()
+        sunriseDate.setHours(sunriseTime.hours, sunriseTime.minutes, 0, 0)
+
+        const sunsetDate = new Date()
+        sunsetDate.setHours(sunsetTime.hours, sunsetTime.minutes, 0, 0)
+
+        const daylightMilliseconds = sunsetDate.getTime() - sunriseDate.getTime()
+        const daylightMinutes = daylightMilliseconds / 60000
+        const daylightHours = Math.floor(daylightMinutes / 60)
+        const remainingMinutes = Math.round(daylightMinutes % 60)
+
+        return `${daylightHours}:${remainingMinutes}`
+    }
+}
+
 export class SunCardContent {
   static generate (data: TSunCardData, localization: TSunCardTexts, config: TSunCardConfig): TemplateResult {
+      console.log(data)
+
     if (data?.error) {
       return html`
         <ha-card>
@@ -33,7 +68,10 @@ export class SunCardContent {
         <div class="sun-card-text-container">
           <span class="sun-card-text-subtitle">${localization.Sunrise}</span>
           ${data?.times.sunrise ? this.generateTime(data.times.sunrise) : ''}
-
+        </div>
+        <div class="sun-card-text-container">
+            <span class="sun-card-text-subtitle">${localization.Daylight}</span>
+            ${data?.times.sunrise ? DaylightCalculator.calculateDaylightTime(data.times.sunrise, data.times.sunset) : ''}
         </div>
         <div class="sun-card-text-container">
           <span class="sun-card-text-subtitle">${localization.Sunset}</span>
@@ -129,7 +167,7 @@ export class SunCardContent {
           <span class="sun-card-dawn-time sun-card-text-time">${data?.elevation ?? ''}</span>
         </div>
       ` : html``
-  
+
       bottomRow = html`
         <div class="sun-card-footer-row">
           ${azimuth}
@@ -154,7 +192,7 @@ export class SunCardContent {
         </span>
       `
     }
-    
+
     return html`
       <span class="sun-card-text-time">${time.time}</span>
     `

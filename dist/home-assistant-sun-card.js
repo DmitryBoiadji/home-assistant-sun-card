@@ -3377,17 +3377,38 @@ LitElement.shadowRootOptions = { mode: 'open' };
 var _templateObject$1;
 var cardStyles = css(_templateObject$1 || (_templateObject$1 = _taggedTemplateLiteral(["\n  .sun-card {\n    --sun-card-lines: #464646;\n    --sun-card-text-color: #fff;\n    --sun-card-subtitle-color: #fff;\n\n    color: var(--sun-card-text-color);\n    padding: 1rem;\n  }\n\n  .sun-card-body {\n    padding-top: 0.5rem;\n  }\n\n  .sun-card.sun-card-light {\n    --sun-card-lines: #ececec;\n    --sun-card-text-color: #000;\n    --sun-card-subtitle-color: #828282;\n  }\n\n  .sun-card-header {\n    display: flex;\n    justify-content: space-between;\n  }\n  \n  .sun-card-footer .sun-card-footer-row {\n    display: flex;\n    justify-content: space-around;\n    padding-top: 1.5rem;\n  }\n\n  .sun-card-title {\n    font-size: 1.5rem;\n    font-weight: 500;\n    padding-bottom: 2rem;\n    margin: 0;\n  }\n\n  .sun-card-text-container {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n  }\n\n  .sun-card-header .sun-card-text-subtitle {\n    font-size: 1.15rem;\n    font-weight: 400;\n    padding-bottom: 0.25rem;\n    color: var(--sun-card-subtitle-color);\n  }\n\n  .sun-card-header .sun-card-text-time {\n    font-size: 1.85rem;\n    font-weight: 400;\n  }\n\n  .sun-card-footer .sun-card-text-subtitle {\n    font-size: 1.25rem;\n    font-weight: 400;\n    padding-bottom: 0.5rem;\n    color: var(--sun-card-subtitle-color);\n  }\n\n  .sun-card-footer .sun-card-text-time {\n    font-size: 1.25rem;\n    font-weight: 500;\n  }\n\n  .sun-card-text-time-period {\n    font-size: 0.75rem;\n  }\n"])));
 
-var Azimuth$e = "Azimut";
-var Dawn$e = "Daggry";
-var Dusk$e = "Tusmørke";
-var Elevation$e = "Højde";
-var Noon$e = "Middag";
-var Sunrise$e = "Solopgang";
-var Sunset$e = "Solnedgang";
-var errors$e = {
+var Azimuth$f = "Azimut";
+var Dawn$f = "Daggry";
+var Dusk$f = "Tusmørke";
+var Elevation$f = "Højde";
+var Noon$f = "Middag";
+var Sunrise$f = "Solopgang";
+var Sunset$f = "Solnedgang";
+var errors$f = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
 var da = {
+	Azimuth: Azimuth$f,
+	Dawn: Dawn$f,
+	Dusk: Dusk$f,
+	Elevation: Elevation$f,
+	Noon: Noon$f,
+	Sunrise: Sunrise$f,
+	Sunset: Sunset$f,
+	errors: errors$f
+};
+
+var Azimuth$e = "Azimut";
+var Dawn$e = "Morgendämmerung";
+var Dusk$e = "Abenddämmerung";
+var Elevation$e = "Zenitwinkel";
+var Noon$e = "Zenit";
+var Sunrise$e = "Sonnenaufgang";
+var Sunset$e = "Sonnenuntergang";
+var errors$e = {
+	SunIntegrationNotFound: "Sun integration not found"
+};
+var de = {
 	Azimuth: Azimuth$e,
 	Dawn: Dawn$e,
 	Dusk: Dusk$e,
@@ -3398,17 +3419,18 @@ var da = {
 	errors: errors$e
 };
 
-var Azimuth$d = "Azimut";
-var Dawn$d = "Morgendämmerung";
-var Dusk$d = "Abenddämmerung";
-var Elevation$d = "Zenitwinkel";
-var Noon$d = "Zenit";
-var Sunrise$d = "Sonnenaufgang";
-var Sunset$d = "Sonnenuntergang";
+var Azimuth$d = "Azimuth";
+var Dawn$d = "Dawn";
+var Dusk$d = "Dusk";
+var Elevation$d = "Elevation";
+var Noon$d = "Solar noon";
+var Sunrise$d = "Sunrise";
+var Sunset$d = "Sunset";
+var Daylight = "Daylight";
 var errors$d = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var de = {
+var en = {
 	Azimuth: Azimuth$d,
 	Dawn: Dawn$d,
 	Dusk: Dusk$d,
@@ -3416,20 +3438,21 @@ var de = {
 	Noon: Noon$d,
 	Sunrise: Sunrise$d,
 	Sunset: Sunset$d,
+	Daylight: Daylight,
 	errors: errors$d
 };
 
-var Azimuth$c = "Azimuth";
-var Dawn$c = "Dawn";
-var Dusk$c = "Dusk";
-var Elevation$c = "Elevation";
-var Noon$c = "Solar noon";
-var Sunrise$c = "Sunrise";
-var Sunset$c = "Sunset";
+var Azimuth$c = "Azimut";
+var Dawn$c = "Amanecer";
+var Dusk$c = "Anochecer";
+var Elevation$c = "Elevación";
+var Noon$c = "Mediodía solar";
+var Sunrise$c = "Salida del sol";
+var Sunset$c = "Atardecer";
 var errors$c = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var en = {
+var es = {
 	Azimuth: Azimuth$c,
 	Dawn: Dawn$c,
 	Dusk: Dusk$c,
@@ -3440,17 +3463,17 @@ var en = {
 	errors: errors$c
 };
 
-var Azimuth$b = "Azimut";
-var Dawn$b = "Amanecer";
-var Dusk$b = "Anochecer";
-var Elevation$b = "Elevación";
-var Noon$b = "Mediodía solar";
-var Sunrise$b = "Salida del sol";
-var Sunset$b = "Atardecer";
+var Azimuth$b = "Asimuut";
+var Dawn$b = "Koidik";
+var Dusk$b = "Hämarik";
+var Elevation$b = "Kõrgus";
+var Noon$b = "Keskpäev";
+var Sunrise$b = "Päikesetõus";
+var Sunset$b = "Päikeseloojang";
 var errors$b = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var es = {
+var et = {
 	Azimuth: Azimuth$b,
 	Dawn: Dawn$b,
 	Dusk: Dusk$b,
@@ -3461,17 +3484,17 @@ var es = {
 	errors: errors$b
 };
 
-var Azimuth$a = "Asimuut";
-var Dawn$a = "Koidik";
-var Dusk$a = "Hämarik";
-var Elevation$a = "Kõrgus";
-var Noon$a = "Keskpäev";
-var Sunrise$a = "Päikesetõus";
-var Sunset$a = "Päikeseloojang";
+var Azimuth$a = "Atsimuutti";
+var Dawn$a = "Sarastus";
+var Dusk$a = "Hämärä";
+var Elevation$a = "Korkeus";
+var Noon$a = "Keskipäivä";
+var Sunrise$a = "Auringonnousu";
+var Sunset$a = "Auringonlasku";
 var errors$a = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var et = {
+var fi = {
 	Azimuth: Azimuth$a,
 	Dawn: Dawn$a,
 	Dusk: Dusk$a,
@@ -3482,17 +3505,17 @@ var et = {
 	errors: errors$a
 };
 
-var Azimuth$9 = "Atsimuutti";
-var Dawn$9 = "Sarastus";
-var Dusk$9 = "Hämärä";
-var Elevation$9 = "Korkeus";
-var Noon$9 = "Keskipäivä";
-var Sunrise$9 = "Auringonnousu";
-var Sunset$9 = "Auringonlasku";
+var Azimuth$9 = "Azimut";
+var Dawn$9 = "Aube";
+var Dusk$9 = "Crépuscule";
+var Elevation$9 = "Élévation";
+var Noon$9 = "Midi solaire";
+var Sunrise$9 = "Lever du soleil";
+var Sunset$9 = "Coucher du soleil";
 var errors$9 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var fi = {
+var fr = {
 	Azimuth: Azimuth$9,
 	Dawn: Dawn$9,
 	Dusk: Dusk$9,
@@ -3504,16 +3527,16 @@ var fi = {
 };
 
 var Azimuth$8 = "Azimut";
-var Dawn$8 = "Aube";
-var Dusk$8 = "Crépuscule";
-var Elevation$8 = "Élévation";
-var Noon$8 = "Midi solaire";
-var Sunrise$8 = "Lever du soleil";
-var Sunset$8 = "Coucher du soleil";
+var Dawn$8 = "Hajnal";
+var Dusk$8 = "Szürkület";
+var Elevation$8 = "Magasság";
+var Noon$8 = "Dél";
+var Sunrise$8 = "Napkelte";
+var Sunset$8 = "Napnyugta";
 var errors$8 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var fr = {
+var hu = {
 	Azimuth: Azimuth$8,
 	Dawn: Dawn$8,
 	Dusk: Dusk$8,
@@ -3524,17 +3547,17 @@ var fr = {
 	errors: errors$8
 };
 
-var Azimuth$7 = "Azimut";
-var Dawn$7 = "Hajnal";
-var Dusk$7 = "Szürkület";
-var Elevation$7 = "Magasság";
-var Noon$7 = "Dél";
-var Sunrise$7 = "Napkelte";
-var Sunset$7 = "Napnyugta";
+var Azimuth$7 = "Azimuth";
+var Dawn$7 = "Aurora";
+var Dusk$7 = "Crepuscolo";
+var Elevation$7 = "Elevazione";
+var Noon$7 = "Mezzogiorno solare";
+var Sunrise$7 = "Alba";
+var Sunset$7 = "Tramonto";
 var errors$7 = {
-	SunIntegrationNotFound: "Sun integration not found"
+	SunIntegrationNotFound: "Integrazione Sun non trovata"
 };
-var hu = {
+var it = {
 	Azimuth: Azimuth$7,
 	Dawn: Dawn$7,
 	Dusk: Dusk$7,
@@ -3545,17 +3568,17 @@ var hu = {
 	errors: errors$7
 };
 
-var Azimuth$6 = "Azimuth";
-var Dawn$6 = "Alba";
-var Dusk$6 = "Crepuscolo";
-var Elevation$6 = "Elevazione";
-var Noon$6 = "Mezzogiorno solare";
-var Sunrise$6 = "Alba";
-var Sunset$6 = "Tramonto";
+var Azimuth$6 = "Azimut";
+var Dawn$6 = "Dageraad";
+var Dusk$6 = "Schemer";
+var Elevation$6 = "Hoogte";
+var Noon$6 = "Zonne-middag";
+var Sunrise$6 = "Zonsopkomst";
+var Sunset$6 = "Zonsondergang";
 var errors$6 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var it = {
+var nl = {
 	Azimuth: Azimuth$6,
 	Dawn: Dawn$6,
 	Dusk: Dusk$6,
@@ -3566,17 +3589,17 @@ var it = {
 	errors: errors$6
 };
 
-var Azimuth$5 = "Azimut";
-var Dawn$5 = "Dageraad";
-var Dusk$5 = "Schemer";
-var Elevation$5 = "Hoogte";
-var Noon$5 = "Zonne-middag";
-var Sunrise$5 = "Zonsopkomst";
-var Sunset$5 = "Zonsondergang";
+var Azimuth$5 = "Azymut";
+var Dawn$5 = "Świt";
+var Dusk$5 = "Zmierzch";
+var Elevation$5 = "Wysokość";
+var Noon$5 = "Górowanie";
+var Sunrise$5 = "Wschód";
+var Sunset$5 = "Zachód";
 var errors$5 = {
-	SunIntegrationNotFound: "Sun integration not found"
+	SunIntegrationNotFound: "Nie odnaleziono integracji sun"
 };
-var nl = {
+var pl = {
 	Azimuth: Azimuth$5,
 	Dawn: Dawn$5,
 	Dusk: Dusk$5,
@@ -3587,17 +3610,17 @@ var nl = {
 	errors: errors$5
 };
 
-var Azimuth$4 = "Azymut";
-var Dawn$4 = "Świt";
-var Dusk$4 = "Zmierzch";
-var Elevation$4 = "Wysokość";
-var Noon$4 = "Górowanie";
-var Sunrise$4 = "Wschód";
-var Sunset$4 = "Zachód";
+var Azimuth$4 = "Azimute";
+var Dawn$4 = "Amanhecer";
+var Dusk$4 = "Anoitecer";
+var Elevation$4 = "Elevação";
+var Noon$4 = "Meio dia solar";
+var Sunrise$4 = "Nascer do sol";
+var Sunset$4 = "Pôr do sol";
 var errors$4 = {
-	SunIntegrationNotFound: "Nie odnaleziono integracji sun"
+	SunIntegrationNotFound: "Sun integration not found"
 };
-var pl = {
+var ptBR = {
 	Azimuth: Azimuth$4,
 	Dawn: Dawn$4,
 	Dusk: Dusk$4,
@@ -3608,17 +3631,17 @@ var pl = {
 	errors: errors$4
 };
 
-var Azimuth$3 = "Azimute";
-var Dawn$3 = "Amanhecer";
-var Dusk$3 = "Anoitecer";
-var Elevation$3 = "Elevação";
-var Noon$3 = "Meio dia solar";
-var Sunrise$3 = "Nascer do sol";
-var Sunset$3 = "Pôr do sol";
+var Azimuth$3 = "Азимут";
+var Dawn$3 = "Рассвет";
+var Dusk$3 = "Сумерки";
+var Elevation$3 = "Высота";
+var Noon$3 = "Зенит";
+var Sunrise$3 = "Восход";
+var Sunset$3 = "Закат";
 var errors$3 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var ptBR = {
+var ru = {
 	Azimuth: Azimuth$3,
 	Dawn: Dawn$3,
 	Dusk: Dusk$3,
@@ -3629,17 +3652,17 @@ var ptBR = {
 	errors: errors$3
 };
 
-var Azimuth$2 = "Азимут";
-var Dawn$2 = "Рассвет";
-var Dusk$2 = "Сумерки";
-var Elevation$2 = "Высота";
-var Noon$2 = "Зенит";
-var Sunrise$2 = "Восход";
-var Sunset$2 = "Закат";
+var Azimuth$2 = "Azimut";
+var Dawn$2 = "Zora";
+var Dusk$2 = "Mrak";
+var Elevation$2 = "Višina";
+var Noon$2 = "Sončno poldne";
+var Sunrise$2 = "Sončni vzhod";
+var Sunset$2 = "Sončni zahod";
 var errors$2 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var ru = {
+var sl = {
 	Azimuth: Azimuth$2,
 	Dawn: Dawn$2,
 	Dusk: Dusk$2,
@@ -3651,16 +3674,16 @@ var ru = {
 };
 
 var Azimuth$1 = "Azimut";
-var Dawn$1 = "Zora";
-var Dusk$1 = "Mrak";
-var Elevation$1 = "Višina";
-var Noon$1 = "Sončno poldne";
-var Sunrise$1 = "Sončni vzhod";
-var Sunset$1 = "Sončni zahod";
+var Dawn$1 = "Gryning";
+var Dusk$1 = "Skymning";
+var Elevation$1 = "Elevation";
+var Noon$1 = "Middag";
+var Sunrise$1 = "Soluppgång";
+var Sunset$1 = "Solnedgång";
 var errors$1 = {
 	SunIntegrationNotFound: "Sun integration not found"
 };
-var sl = {
+var sv = {
 	Azimuth: Azimuth$1,
 	Dawn: Dawn$1,
 	Dusk: Dusk$1,
@@ -3671,17 +3694,17 @@ var sl = {
 	errors: errors$1
 };
 
-var Azimuth = "Azimut";
-var Dawn = "Gryning";
-var Dusk = "Skymning";
-var Elevation = "Elevation";
-var Noon = "Middag";
-var Sunrise = "Soluppgång";
-var Sunset = "Solnedgång";
+var Azimuth = "方位角";
+var Dawn = "夜明け";
+var Dusk = "夕暮れ";
+var Elevation = "標高";
+var Noon = "南中時刻";
+var Sunrise = "日の出";
+var Sunset = "日の入り";
 var errors = {
-	SunIntegrationNotFound: "Sun integration not found"
+	SunIntegrationNotFound: "太陽の統合が見つかりません"
 };
-var sv = {
+var ja = {
 	Azimuth: Azimuth,
 	Dawn: Dawn,
 	Dusk: Dusk,
@@ -3728,12 +3751,59 @@ _defineProperty(Constants, "LOCALIZATION_LANGUAGES", {
   'pt-BR': ptBR,
   ru: ru,
   sl: sl,
-  sv: sv
+  sv: sv,
+  ja: ja
 });
 
 _defineProperty(Constants, "SUN_RADIUS", 17);
 
 var _templateObject, _templateObject2, _templateObject3, _templateObject4, _templateObject5, _templateObject6, _templateObject7, _templateObject8, _templateObject9, _templateObject10, _templateObject11, _templateObject12, _templateObject13, _templateObject14, _templateObject15, _templateObject16, _templateObject17;
+
+var DaylightCalculator = /*#__PURE__*/function () {
+  function DaylightCalculator() {
+    _classCallCheck(this, DaylightCalculator);
+  }
+
+  _createClass(DaylightCalculator, null, [{
+    key: "parseTime",
+    value: function parseTime(period, time) {
+      // eslint-disable-next-line prefer-const
+      var _time$split$map = time.split(':').map(Number),
+          _time$split$map2 = _slicedToArray(_time$split$map, 2),
+          hours = _time$split$map2[0],
+          minutes = _time$split$map2[1];
+
+      if (period === 'PM' && hours !== 12) {
+        hours += 12;
+      } else if (period === 'AM' && hours === 12) {
+        hours = 0;
+      }
+
+      return {
+        hours: hours,
+        minutes: minutes
+      };
+    }
+  }, {
+    key: "calculateDaylightTime",
+    value: function calculateDaylightTime(sunrise, sunset) {
+      var sunriseTime = this.parseTime(sunrise.period, sunrise.time);
+      var sunsetTime = this.parseTime(sunset.period, sunset.time);
+      var sunriseDate = new Date();
+      sunriseDate.setHours(sunriseTime.hours, sunriseTime.minutes, 0, 0);
+      var sunsetDate = new Date();
+      sunsetDate.setHours(sunsetTime.hours, sunsetTime.minutes, 0, 0);
+      var daylightMilliseconds = sunsetDate.getTime() - sunriseDate.getTime();
+      var daylightMinutes = daylightMilliseconds / 60000;
+      var daylightHours = Math.floor(daylightMinutes / 60);
+      var remainingMinutes = Math.round(daylightMinutes % 60);
+      return "".concat(daylightHours, ":").concat(remainingMinutes);
+    }
+  }]);
+
+  return DaylightCalculator;
+}();
+
 var SunCardContent = /*#__PURE__*/function () {
   function SunCardContent() {
     _classCallCheck(this, SunCardContent);
@@ -3742,6 +3812,8 @@ var SunCardContent = /*#__PURE__*/function () {
   _createClass(SunCardContent, null, [{
     key: "generate",
     value: function generate(data, localization, config) {
+      console.log(data);
+
       if (data !== null && data !== void 0 && data.error) {
         return html(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n        <ha-card>\n          ", "\n        </ha-card>\n      "])), this.generateError());
       }
@@ -3752,7 +3824,7 @@ var SunCardContent = /*#__PURE__*/function () {
     key: "generateHeader",
     value: function generateHeader(data, localization, config) {
       var title = config.title !== undefined ? html(_templateObject3 || (_templateObject3 = _taggedTemplateLiteral(["\n      <h1 class=\"sun-card-title\">", "</h1>\n    "])), config.title) : html(_templateObject4 || (_templateObject4 = _taggedTemplateLiteral([""])));
-      return html(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n      ", "\n      <div class=\"sun-card-header\">\n        <div class=\"sun-card-text-container\">\n          <span class=\"sun-card-text-subtitle\">", "</span>\n          ", "\n\n        </div>\n        <div class=\"sun-card-text-container\">\n          <span class=\"sun-card-text-subtitle\">", "</span>\n          ", "\n        </div>\n      </div>\n    "])), title, localization.Sunrise, data !== null && data !== void 0 && data.times.sunrise ? this.generateTime(data.times.sunrise) : '', localization.Sunset, data !== null && data !== void 0 && data.times.sunset ? this.generateTime(data.times.sunset) : '');
+      return html(_templateObject5 || (_templateObject5 = _taggedTemplateLiteral(["\n      ", "\n      <div class=\"sun-card-header\">\n        <div class=\"sun-card-text-container\">\n          <span class=\"sun-card-text-subtitle\">", "</span>\n          ", "\n        </div>\n        <div class=\"sun-card-text-container\">\n            <span class=\"sun-card-text-subtitle\">", "</span>\n            ", "\n        </div>\n        <div class=\"sun-card-text-container\">\n          <span class=\"sun-card-text-subtitle\">", "</span>\n          ", "\n        </div>\n      </div>\n    "])), title, localization.Sunrise, data !== null && data !== void 0 && data.times.sunrise ? this.generateTime(data.times.sunrise) : '', localization.Daylight, data !== null && data !== void 0 && data.times.sunrise ? DaylightCalculator.calculateDaylightTime(data.times.sunrise, data.times.sunset) : '', localization.Sunset, data !== null && data !== void 0 && data.times.sunset ? this.generateTime(data.times.sunset) : '');
     }
   }, {
     key: "generateBody",

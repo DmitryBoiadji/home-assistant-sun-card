@@ -106,3 +106,6 @@ typings/
 # Build files
 .vs
 build.cmd
+
+# Jetbains IDEA
+.idea
